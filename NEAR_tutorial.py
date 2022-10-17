@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Spyder Editor
+Created on Thu Aug  4 13:36:19 2022
 
-This is a temporary script file.
+@author: sJhilal
 """
 
 import mne
