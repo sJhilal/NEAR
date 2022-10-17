@@ -2,7 +2,7 @@
 """
 Created on Thu Aug  4 09:22:25 2022
 
-@author: 39351
+@author: sJhilal
 """
 
 import mne
