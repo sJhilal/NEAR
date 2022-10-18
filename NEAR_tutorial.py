@@ -16,18 +16,11 @@ from functions.asr import ASR, sliding_window
 
 # Step 0: Dataset Parameters 
 
-# Change accordingly
-path_of_folder = 'C:\\Users\\39351\\Desktop\\FBK\\NEAR_sou\\python\\'
+path_of_folder = os.path.dirname(os.path.abspath(__file__))
 
-# First example from eeglab sample data 
-data_path = path_of_folder + 'test_2\\eeglab_data.set'
-chanlocation_file = path_of_folder + 'test_2\\eeglab_chan32.locs'
-
-# Second example from https://osf.io/r7s9b/
-# Fails to interpolate because of following error (missing digitization info)
-# RuntimeError: Cannot fit headshape without digitization , info["dig"] is None
-# Also, LOF picks 37 chans as bad because data file does not only contain EEG scalp channels but also others(ear, eog,ankle... etc 73 total)
-# data_path = path_of_folder + 'test_2\\sub-01_ses-02_task-SSVEP_eeg.vhdr'
+# Data example from eeglab sample data
+data_path = os.path.join(path_of_folder, "test_data", "eeglab_data.set")
+chanlocation_file = os.path.join(path_of_folder, "test_data", "eeglab_chan32.locs")
 
 lowpass=40
 highpass=0.1
